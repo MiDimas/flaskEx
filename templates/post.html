@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ post.title }}
+{{ post.date }}
+{{ post.description }}
+{{ post.html|safe }}
+
+{% endblock content %}

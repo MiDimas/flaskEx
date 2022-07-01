@@ -1,0 +1,11 @@
+{
+    "site_title":"Практика flask",
+    "name":"MiDimas",
+    "home":"Главная",
+    "blog":"Блог",
+    "contacts": "Контакты",
+    "resume": "Резюме",
+    "telegram": "https://t.me/d_artm",
+    "mail": "kuzevone@gmail.com",
+    "github": "https://github.com/MiDimas"
+}

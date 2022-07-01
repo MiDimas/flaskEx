@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Контакты</h1>
+    <div class="block-cards">
+        <a class="card" href="{{ github }}" target="_blank">
+            <div>
+                <object data="/static/img/git.svg" type="image/svg+xml" width="100px" height="100px"></object>
+                <span>Перейти в GitHub</span>
+            </div>
+        </a>
+        <a class="card" href="{{ telegram }}" target="_blank">
+            <div>
+                <object data="/static/img/telegram.svg" type="image/svg+xml" width="100px" height="100px"></object>
+                <span>Перейти в Telegram</span>
+            </div>
+        </a> 
+        <a class="card" href="mailto:{{ mail }}" target="_blank">
+            <div>
+                <object data="/static/img/mail.svg" type="image/svg+xml" width="100px" height="100px"></object>
+                <span>Написать на почту</span>
+            </div>
+        </a>
+    </div>    
+
+{% endblock content %}

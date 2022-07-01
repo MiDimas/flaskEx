@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Блог</h1>
+    {% for post in posts %}
+        <div>
+            <h4>{{ post.title }}</h4>
+            <small>{{ post.date }}</small>
+            <p>{{ post.description }}</p>
+            <p>{{ post.html[:60]|safe }}</p>
+            <br>
+            <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">Читать статью</a>
+
+        </div>
+    {% endfor %}
+
+{% endblock content %}
