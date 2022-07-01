@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(220, 229, 245);
+}
+/* стили для хидэра */
+header{
+    background-color: rgb(182, 188, 199);
+    border-radius: 0 0 15px 15px;
+    border-bottom: 1px solid rgb(148, 160, 184);
+    
+}
+h1{
+    color: rgb(150, 116, 92);
+}
+.header-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    padding: 10px 0px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+/* конец стилей для хидэра */
+
+/* общие стили для ссылок и осноного блока для контена */
+a{
+    text-decoration: none;
+    color: chocolate;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 7px;
+    border: 1px solid rgb(150, 116, 92);
+    transition: all 0.8s;
+}
+a:hover{
+    background-color: rgb(150, 116, 92);
+    color: antiquewhite;
+    box-shadow: 0 0 10px gray;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(182, 188, 199);
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(110, 110, 110);
+}
+
+main div{
+    margin: 10px 0px;
+}
+/* конец стилей для блока контента */
+
+/* блок стилей для главной страницы */
+.title-site h3{
+    font-size: 40px;
+    color: rgb(112, 139, 194);
+    text-shadow: 0 5px 10px rgb(220, 229, 245);
+    padding: 30px auto;
+}
+.title-site p{
+    font-size: 35px;
+    text-shadow: 0 5px 5px rgb(230, 230, 230);
+    margin-bottom: 40px;
+}
+.title-site a{
+    margin: 10px 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+
+}
+.title-site{
+    margin: 40px auto;
+}
+/* конец блока стилей главной страницы */
+
+/* Стили блока резюме */
+.resume img{
+    width: 256px;
+    float: left;
+    margin: 5px 25px 5px 0px;
+}
+.resume h2{
+    margin: 10px;
+}
+.resume{
+    padding: 10px;
+    margin: 5%;
+    text-align: left;
+}
+
+.resume p{
+    padding: 3px 20px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.resume ul{
+    padding: 3px 15px;
+}
+.resume h4{
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: 8px;
+}
+.resume>p:last-of-type{
+   margin: 15px;
+}
+/* Конец блока резюме */
+
+/* Стили карточек контактов */
+.block-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    margin: 20px 15px;
+    padding: 30px;
+    border: 0;
+    color: rgb(110, 110, 110);
+    background-color: rgba(148, 148, 148, 0.068);
+}
+.card:hover{
+    color: rgb(112, 139, 194);
+    background-color: white;
+    transform: scale(1.05, 1.05);
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* конец блока стилей карточек контактов */
+
+@media (max-width: 700px){
+    .header-text{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    header ul{
+        flex-direction: column;
+        margin: 10px auto;
+        text-align: center;
+        width: 80%;
+    }
+    header li{
+        margin: 15px auto;
+        width: 100%;
+    }
+    main{
+        width: 90%;
+    }
+    a{
+        padding: 10px 0;
+        display: block;
+    }
+    .block-cards{
+        flex-direction: column;
+    }
+    .resume img{
+        width: 128px;
+        text-align: center;
+        display: block;
+        float: none;
+        margin: auto;
+
+    }
+    .resume{
+        text-align: center;
+    }
+    .resume p, .resume h4{
+        margin: auto;
+    }
+}
